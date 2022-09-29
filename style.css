@@ -32,7 +32,7 @@ h1 {
 }
 
 details, summary {
-    color: hsl(240, 6%, 50%);
+    color: hsl(237, 12%, 33%);
     font-size: 12px;
     font-weight: 700;
 }
@@ -47,7 +47,12 @@ details:hover {
 }
 
 summary {
-    list-style-image: url("images/icon-arrow-down.svg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*list-style-image: url("images/icon-arrow-down.svg");*/
+    font-size: 14px;
+    font-weight: 400;
 }
 
 summary:hover {
@@ -55,11 +60,18 @@ summary:hover {
 }
 
 summary:focus {
-    color: hsl(237, 12%, 33%);
+    color: black;
+    font-weight: 700;
+}
+
+details[open] > summary > .custom-arrow {
+    transform: rotate(180deg);
 }
 
 p {
     font-weight: 400;
+    color: hsl(240, 6%, 50%);
+    padding-right: 26px;
 }
 
 footer {
@@ -76,26 +88,19 @@ footer {
     height: 100px;
 }
 
-#mobile-woman {
-    bottom: 80px;
-    left: 80px;
-    scale: 1.75;
-}
-
-#mobile-bg {
-    bottom: 115px;
-    left: 30px;
-}
-
 .faq-section {
     bottom: 0;
-    box-sizing: border-box;
 }
 
 .faq-accordion {
     width: 100%;
     height: 350px;
     overflow: hidden;
+}
+
+.custom-arrow {
+    width: 10px;
+    height: 8px;
 }
 
 .attribution { 
@@ -105,4 +110,15 @@ footer {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+#mobile-woman {
+    bottom: 80px;
+    left: 80px;
+    scale: 1.75;
+}
+
+#mobile-bg {
+    bottom: 115px;
+    left: 30px;
 }
