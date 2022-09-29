@@ -1,0 +1,108 @@
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, hsl(273, 75%, 66%) 25%, hsl(240, 73%, 65%) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    position: absolute;
+    width: 325px;
+    height: 550px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 20px;
+    bottom: 72px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+details, summary {
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+details {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 14px 0;
+}
+
+details:hover {
+   cursor: pointer;
+}
+
+summary {
+    list-style-image: url("images/icon-arrow-down.svg");
+}
+
+summary:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+summary:focus {
+    color: hsl(237, 12%, 33%);
+}
+
+p {
+    font-weight: 400;
+}
+
+footer {
+    position: absolute;
+    bottom: 8px;
+}
+
+.images {
+    height: 125px;
+}
+
+.mobile-image {
+    position: relative;
+    height: 100px;
+}
+
+#mobile-woman {
+    bottom: 80px;
+    left: 80px;
+    scale: 1.75;
+}
+
+#mobile-bg {
+    bottom: 115px;
+    left: 30px;
+}
+
+.faq-section {
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.faq-accordion {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
